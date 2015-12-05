@@ -6,7 +6,9 @@
     "build": "webpack --config webpack.build.js --bail -p",
     "dev": "webpack-dev-server --history-api-fallback --inline --progress",
     "test": "karma start",
-    "test:live": "karma start --auto-watch --no-single-run"
+    "test:live": "karma start --auto-watch --no-single-run",
+    "mock": "node server/app.js --port=3333 --mode=mock | node_modules/bunyan/bin/bunyan",
+    "prod": "node server/app.js --port=3333 --mode=prod --proxy.host=localhost --proxy.port=8080 | node_modules/bunyan/bin/bunyan"
   },
   "repository": {
     "type": "git",
@@ -15,7 +17,11 @@
   "author": "tribersoft",
   "license": "MIT",
   "dependencies": {
-    "angular": "^1.4.7"
+    "angular": "^1.4.7",
+    "bunyan": "^1.5.1",
+    "express": "^4.13.3",
+    "http-proxy": "^1.12.0",
+    "minimist": "^1.2.0"
   },
   "devDependencies": {
     "angular-mocks": "^1.4.7",
