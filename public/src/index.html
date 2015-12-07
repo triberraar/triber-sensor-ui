@@ -1,11 +1,43 @@
 <!doctype html>
 <html ng-app="app" lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Angular App</title>
-  <base href="/">
+    <meta charset="UTF-8">
+    <title>Angular App</title>
+    <base href="/">
 </head>
 <body>
-  Hello, World
+<div layout="row" layout-fill>
+<md-sidenav md-is-locked-open="true" md-component-id="left" class="md-whiteframe-z2 md-sidenav-left">
+    <md-toolbar class="md-hue-1 md-whiteframe-z2">
+        <md-button layout="row" layout-align="center center" class="md-toolbar-tools md-warn" href="">
+            <h1>Test</h1>
+        </md-button>
+    </md-toolbar>
+    <md-button layout="column" layout-align="center center" flex>
+        <div class="md-tile-content">
+            <i class="fa fa-tachometer fa-2x"></i>
+        </div>
+        <div class="md-tile-content">Dashboard</div>
+    </md-button>
+    <md-divider></md-divider>
+    <md-button layout="column" layout-align="center center" flex >
+        <div class="md-tile-content">
+            <i class="fa fa-desktop fa-2x"></i>
+        </div>
+        <div class="md-tile-content">Devices</div>
+    </md-button>
+</md-sidenav>
+<div layout-align="column" flex>
+    <md-toolbar layout="row" layout-align="end center">
+        <md-button class="toolbar-button" aria-label="Events">
+            <i class="fa fa-bell"></i>
+            <span class="notifications-label">7</span>
+        </md-button>
+    </md-toolbar>
+    <md-content flex class="md-padding page-content">
+        <div ui-view></div>
+    </md-content>
+</div>
+</div>
 </body>
 </html>
