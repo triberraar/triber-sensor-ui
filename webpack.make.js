@@ -85,14 +85,20 @@ module.exports = function makeWebpackConfig(options) {
 
         // Initialize module
     config.module = {
-        preLoaders: [],
+        preLoaders: [
+            {
+                test: /\.js$/, // include .js files
+                exclude: /node_modules/, // exclude any and all files in the node_modules folder
+                loader: "jshint-loader"
+            }
+        ],
         loaders: [{
             // JS LOADER
             // Reference: https://github.com/babel/babel-loader
             // Transpile .js files using babel-loader
             // Compiles ES6 and ES7 into ES5 code
             test: /\.js$/,
-            loader: 'ng-annotate!babel',
+            loaders: ['babel-loader'],
             exclude: /node_modules/
         }, {
             // ASSET LOADER

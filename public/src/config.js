@@ -1,6 +1,6 @@
 'use strict';
 
-export default function themeConfigure($mdThemingProvider) {
+function themeConfigure($mdThemingProvider) {
     $mdThemingProvider
         .theme('default')
         .primaryPalette('grey', {
@@ -40,3 +40,7 @@ export default function themeConfigure($mdThemingProvider) {
         'A700': '#E75753'
     });
 }
+
+themeConfigure.$inject = ['$mdThemingProvider'];
+
+export default themeConfigure;
