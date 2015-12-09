@@ -11,9 +11,13 @@ import angular from 'angular';
 import angularMaterial from 'angular-material';
 import angularUIRouter from 'angular-ui-router';
 
+import menu from './menu/menu.module.js';
+
 let dependencies = [
     angularMaterial,
-    angularUIRouter
+    angularUIRouter,
+
+    menu
 ];
 
 const app = angular.module('app', dependencies)
