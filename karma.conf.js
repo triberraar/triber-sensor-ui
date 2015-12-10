@@ -39,7 +39,11 @@ module.exports = function karmaConfig (config) {
     // Configure code coverage reporter
     coverageReporter: {
       dir: 'public/build/coverage/',
-      type: 'html'
+      reporters: [
+        {type: 'html', subdir: 'html'},
+        {type: 'lcov', subdir: 'lcov'}
+      ]
+
     },
 
     webpack: require('./webpack.test'),
