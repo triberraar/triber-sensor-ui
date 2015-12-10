@@ -1,0 +1,24 @@
+<!doctype html>
+<html ng-app="app" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Triber-Sensor-UI</title>
+    <base href="/">
+</head>
+<body>
+<div layout="row" layout-fill>
+<triber-menu></triber-menu>
+<div layout-align="column" flex>
+    <md-toolbar layout="row" layout-align="end center">
+        <md-button class="toolbar-button" aria-label="Events">
+            <i class="fa fa-bell"></i>
+            <span class="notifications-label">7</span>
+        </md-button>
+    </md-toolbar>
+    <md-content flex class="md-padding page-content">
+        <div ui-view></div>
+    </md-content>
+</div>
+</div>
+</body>
+</html>

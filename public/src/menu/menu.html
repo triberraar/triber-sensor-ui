@@ -1,0 +1,17 @@
+<md-sidenav md-is-locked-open="true" md-component-id="left" class="md-whiteframe-z2 md-sidenav-left">
+    <md-toolbar class="md-hue-1 md-whiteframe-z2">
+        <md-button layout="row" layout-align="center center" class="md-toolbar-tools md-warn" href="">
+        </md-button>
+    </md-toolbar>
+    <div ng-repeat="menuItem in menuController.getMenuItems()">
+        <md-button layout="column" layout-align="center center" flex >
+            <div class="md-tile-content">
+            </div>
+            <div class="md-tile-content">{{menuItem.title}}</div>
+            <div class="md-tile-content" ng-if="menuItem.icon">
+                <i ng-class="menuItem.icon"></i>
+            </div>
+        </md-button>
+        <md-divider></md-divider>
+    </div>
+</md-sidenav>

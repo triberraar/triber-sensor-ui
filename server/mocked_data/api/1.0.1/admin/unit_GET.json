@@ -1,0 +1,22 @@
+{
+  "_embedded": {
+    "units": [
+      {
+        "name": "unit",
+        "id": "3cbac3bd-6a8d-4f07-a056-6053237ae1ff",
+        "version": 0,
+        "symbol": "symbol",
+        "_links": {
+          "self": {
+            "href": "http://localhost:3333/api/1.0.2-SNAPSHOT/admin/unit/3cbac3bd-6a8d-4f07-a056-6053237ae1ff"
+          }
+        }
+      }
+    ]
+  },
+  "_links": {
+    "self": {
+      "href": "http://localhost:3333/api/1.0.2-SNAPSHOT/admin/unit"
+    }
+  }
+}
