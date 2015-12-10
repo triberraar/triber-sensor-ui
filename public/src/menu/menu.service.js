@@ -1,7 +1,5 @@
 'use strict';
 
-import angular from 'angular';
-
 class MenuService {
     constructor() {
         this.items = [];

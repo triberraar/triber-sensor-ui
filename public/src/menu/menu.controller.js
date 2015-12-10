@@ -6,7 +6,6 @@ export default class TriberMenuController {
     }
 
     getMenuItems() {
-        console.log('sdf ' + this.menuService.getItems().length);
         return this.menuService.getItems();
     }
 }
