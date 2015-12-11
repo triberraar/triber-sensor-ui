@@ -30,11 +30,11 @@ module.exports = function makeWebpackConfig(options) {
      * Karma will set this when it's a test build
      */
     if (TEST) {
-        config.entry = {}
+        config.entry = {};
     } else {
         config.entry = {
             app: './public/src/app.js'
-        }
+        };
     }
 
     /**
@@ -44,7 +44,7 @@ module.exports = function makeWebpackConfig(options) {
      * Karma will handle setting it up for you when it's a test build
      */
     if (TEST) {
-        config.output = {}
+        config.output = {};
     } else {
         config.output = {
             // Absolute output directory
@@ -61,7 +61,7 @@ module.exports = function makeWebpackConfig(options) {
             // Filename for non-entry points
             // Only adds hash in build mode
             chunkFilename: BUILD ? '[name].[hash].js' : '[name].bundle.js'
-        }
+        };
     }
 
     /**
@@ -90,7 +90,7 @@ module.exports = function makeWebpackConfig(options) {
             {
                 test: /\.js$/, // include .js files
                 exclude: /node_modules/, // exclude any and all files in the node_modules folder
-                loader: "jshint-loader"
+                loader: 'jshint-loader'
             }
         ],
         loaders: [{
@@ -118,19 +118,19 @@ module.exports = function makeWebpackConfig(options) {
             loader: 'raw'
         }, {
             test: /\.woff(\?v=\d+\.\d+\.\d+)?$/,
-            loader: "url?limit=10000&mimetype=application/font-woff"
+            loader: 'url?limit=10000&mimetype=application/font-woff'
         }, {
             test: /\.woff2(\?v=\d+\.\d+\.\d+)?$/,
-            loader: "url?limit=10000&mimetype=application/font-woff"
+            loader: 'url?limit=10000&mimetype=application/font-woff'
         }, {
             test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/,
-            loader: "url?limit=10000&mimetype=application/octet-stream"
+            loader: 'url?limit=10000&mimetype=application/octet-stream'
         }, {
             test: /\.eot(\?v=\d+\.\d+\.\d+)?$/,
-            loader: "file"
+            loader: 'file'
         }, {
             test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
-            loader: "url?limit=10000&mimetype=image/svg+xml"
+            loader: 'url?limit=10000&mimetype=image/svg+xml'
         }
         ]
     };
@@ -147,7 +147,7 @@ module.exports = function makeWebpackConfig(options) {
                 /\.spec\.js$/
             ],
             loader: 'isparta-instrumenter'
-        })
+        });
     }
 
     // CSS LOADER
@@ -170,7 +170,7 @@ module.exports = function makeWebpackConfig(options) {
     if (TEST) {
         // Reference: https://github.com/webpack/null-loader
         // Return an empty module
-        cssLoader.loader = 'null'
+        cssLoader.loader = 'null';
     }
 
     // Add cssLoader to the loader list
@@ -213,7 +213,7 @@ module.exports = function makeWebpackConfig(options) {
                 template: './public/src/index.html',
                 inject: 'body'
             })
-        )
+        );
     }
 
     // Add build specific plugins
@@ -230,7 +230,7 @@ module.exports = function makeWebpackConfig(options) {
             // Reference: http://webpack.github.io/docs/list-of-plugins.html#uglifyjsplugin
             // Minify all javascript, switch loaders to minimizing mode
             new webpack.optimize.UglifyJsPlugin()
-        )
+        );
     }
 
     /**

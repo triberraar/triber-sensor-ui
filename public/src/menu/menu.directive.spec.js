@@ -1,3 +1,5 @@
+'use strict';
+
 import triberMenu from './menu.directive';
 import template from './menu.html';
 
@@ -9,5 +11,5 @@ describe('menu.directive', () => {
        expect(triberMenuDirective.template).toEqual(template);
        expect(triberMenuDirective.controller).toEqual('menuController');
        expect(triberMenuDirective.controllerAs).toEqual('menuController');
-   })
+   });
 });

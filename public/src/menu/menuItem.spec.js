@@ -1,3 +1,5 @@
+'use strict';
+
 import MenuItem from './menuItem';
 
 const TITLE = 'Title';
@@ -16,5 +18,5 @@ describe('menuItem', function() {
 
         expect(menuItem.title).toEqual(TITLE);
         expect(menuItem.icon).toBeUndefined();
-    })
+    });
 });

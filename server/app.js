@@ -1,33 +1,14 @@
+'use strict';
+
 var express = require('express'),
     httpProxy = require('http-proxy'),
     path = require('path'),
     bunyan = require('bunyan'),
     fs = require('fs');
-var logger = bunyan.createLogger({name: "myapp"});
+var logger = bunyan.createLogger({name: 'myapp'});
+var proxy = httpProxy.createProxyServer({});
 
 var args = require('minimist')(process.argv.slice(2));
-
-checkCommandlineParameters();
-
-if (args.mode === 'prod') {
-    logger.info('Running in production mode and proxying: ' + args.proxy.host + ':' + args.proxy.port);
-} else if (args.mode === 'mock') {
-    logger.info('Running in mock mode and serving mocked data. If this happens in production it is not good ;)');
-}
-
-var proxy = httpProxy.createProxyServer({});
-var app = express();
-
-app.use(express.static(path.join(__dirname, '..', 'public', 'build')));
-
-app.route('/api/*$').all(function (req, res) { // proxy all requests
-    if (args.mode === 'prod') {
-        handleApiRequestInProductionMode(req, res);
-    } else if (args.mode === 'mock') {
-        handleApiRequestInMockedMode(req, res);
-    }
-});
-app.listen(args.port);
 
 function checkCommandlineParameters() {
     if(!args.port) {
@@ -66,3 +47,24 @@ function handleApiRequestInMockedMode(req, res) {
         }
     });
 }
+
+checkCommandlineParameters();
+
+if (args.mode === 'prod') {
+    logger.info('Running in production mode and proxying: ' + args.proxy.host + ':' + args.proxy.port);
+} else if (args.mode === 'mock') {
+    logger.info('Running in mock mode and serving mocked data. If this happens in production it is not good ;)');
+}
+
+var app = express();
+
+app.use(express.static(path.join(__dirname, '..', 'public', 'build')));
+
+app.route('/api/*$').all(function (req, res) { // proxy all requests
+    if (args.mode === 'prod') {
+        handleApiRequestInProductionMode(req, res);
+    } else if (args.mode === 'mock') {
+        handleApiRequestInMockedMode(req, res);
+    }
+});
+app.listen(args.port);

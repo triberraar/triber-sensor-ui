@@ -1,3 +1,5 @@
+'use strict';
+
 import MenuService from './menu.service';
 
 describe('menu.service', () => {

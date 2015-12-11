@@ -1,4 +1,6 @@
-import TriberMenuController from './menu.controller.js'
+'use strict';
+
+import TriberMenuController from './menu.controller.js';
 
 const MENU_ITEMS = 'menuItems';
 const menuServiceSpy = {
@@ -13,7 +15,7 @@ describe('menu.controller', () => {
             let controller = new TriberMenuController(menuServiceSpy);
 
             expect(controller.menuService).toEqual(menuServiceSpy);
-        })
+        });
     });
 
     describe('getMenuItems', () => {

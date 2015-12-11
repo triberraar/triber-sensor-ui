@@ -1,6 +1,9 @@
+'use strict';
+
 import menuModule from './menu.module';
 import MenuItem from './menuItem';
-import MenuService from './menu.service'
+import MenuService from './menu.service';
+import angular from 'angular';
 
 describe('menu.module', () => {
     var $controller, ctrl, menuService;
@@ -24,6 +27,6 @@ describe('menu.module', () => {
             expect(menuService.getItems()[2]).toEqual(new MenuItem('Units'));
             expect(menuService.getItems()[3]).toEqual(new MenuItem('Types'));
 
-        })
+        });
     });
 });
