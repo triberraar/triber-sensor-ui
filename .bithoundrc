@@ -43,7 +43,7 @@
     "**/extjs/src/**",
     "**/extjs/welcome/**",
     "bower_components/**"
-    "webpack*.js"
+    "webpack.make.js"
   ],
   "test": [
     "**/test/**",
