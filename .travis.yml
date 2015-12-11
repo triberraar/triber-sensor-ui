@@ -1,7 +1,12 @@
 language: node_js
 sudo: false
 node_js:
-  - '0.12'
+  - 'stable'
+cache:
+  directories:
+    - node_modules
+notifications:
+  email: false
 install:
   - npm install
 after_success:
