@@ -1,0 +1,21 @@
+{
+  "_embedded": {
+    "types": [
+      {
+        "name": "unit",
+        "id": "0a178349-753f-4a68-863f-e2ab17d996ec",
+        "version": 0,
+        "_links": {
+          "self": {
+            "href": "http://localhost:3333/api/1.0.2-SNAPSHOT/admin/type/0a178349-753f-4a68-863f-e2ab17d996ec"
+          }
+        }
+      }
+    ]
+  },
+  "_links": {
+    "self": {
+      "href": "http://localhost:3333/api/1.0.2-SNAPSHOT/admin/type"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "unit",
+  "id": "7613ee6f-6365-46a5-966f-f70c372f9960",
+  "version": 0,
+  "symbol": "symbol",
+  "_links": {
+    "self": {
+      "href": "http://localhost:3333/api/1.0.2-SNAPSHOT/admin/unit/7613ee6f-6365-46a5-966f-f70c372f9960"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "version": "1.0.2-SNAPSHOT",
+  "_links": {
+    "self": {
+      "href": "http://localhost:3333/api/1.0.2-SNAPSHOT"
+    },
+    "types": {
+      "href": "http://localhost:3333/api/1.0.2-SNAPSHOT/admin/type"
+    },
+    "units": {
+      "href": "http://localhost:3333/api/1.0.2-SNAPSHOT/admin/unit"
+    },
+    "devices": {
+      "href": "http://localhost:3333/api/1.0.2-SNAPSHOT/device"
+    },
+    "events": {
+      "href": "http://localhost:3333/api/1.0.2-SNAPSHOT/event?page=0"
+    }
+  }
+}

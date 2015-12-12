@@ -1,0 +1,43 @@
+{
+  "_embedded": {
+    "readings": [
+      {
+        "value": 123,
+        "id": "5fd4a2eb-6ec2-476a-a8ac-3b8c75c7f5b5",
+        "version": 0,
+        "_links": {
+          "sensor": {
+            "href": "http://localhost:3333/api/1.0.2-SNAPSHOT/device/234b675f-d2d2-47eb-a03b-94825015dbbe/sensor/96bb3d34-7f28-4304-8877-c390c4b6e59d"
+          }
+        }
+      },
+      {
+        "value": 100,
+        "id": "2cb75a0d-cc62-4a1f-8de6-dd11c499042c",
+        "version": 0,
+        "_links": {
+          "sensor": {
+            "href": "http://localhost:3333/api/1.0.2-SNAPSHOT/device/234b675f-d2d2-47eb-a03b-94825015dbbe/sensor/96bb3d34-7f28-4304-8877-c390c4b6e59d"
+          }
+        }
+      }
+    ]
+  },
+  "_links": {
+    "self": {
+      "href": "http://localhost:3333/api/1.0.2-SNAPSHOT/device/234b675f-d2d2-47eb-a03b-94825015dbbe/sensor/96bb3d34-7f28-4304-8877-c390c4b6e59d/reading?page=0"
+    },
+    "first": {
+      "href": "http://localhost:3333/api/1.0.2-SNAPSHOT/device/234b675f-d2d2-47eb-a03b-94825015dbbe/sensor/96bb3d34-7f28-4304-8877-c390c4b6e59d/reading?page=0"
+    },
+    "last": {
+      "href": "http://localhost:3333/api/1.0.2-SNAPSHOT/device/234b675f-d2d2-47eb-a03b-94825015dbbe/sensor/96bb3d34-7f28-4304-8877-c390c4b6e59d/reading?page=0"
+    }
+  },
+  "page": {
+    "size": 20,
+    "totalElements": 2,
+    "totalPages": 1,
+    "number": 0
+  }
+}
