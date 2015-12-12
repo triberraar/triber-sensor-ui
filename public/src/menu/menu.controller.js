@@ -1,6 +1,6 @@
 'use strict';
 
-export default class TriberMenuController {
+export default class MenuController {
     constructor(menuService) {
         this.menuService = menuService;
     }
@@ -10,4 +10,4 @@ export default class TriberMenuController {
     }
 }
 
-TriberMenuController.$inject = ['menuService'];
+MenuController.$inject = ['menuService'];
