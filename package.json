@@ -3,6 +3,7 @@
   "version": "0.0.1-SNAPSHOT",
   "description": "Angular ui for the triber-sensor backend",
   "scripts": {
+    "client": "webpack --config webpack.dev.js --progress -d",
     "client-dev": "webpack --config webpack.dev.js --progress -d --watch",
     "test-karma": "karma start",
     "test-karma:live": "karma start --auto-watch --no-single-run",
