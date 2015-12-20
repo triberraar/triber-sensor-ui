@@ -2,19 +2,19 @@
   "version": "1.0.2-SNAPSHOT",
   "_links": {
     "self": {
-      "href": "http://localhost:3333/api/1.0.2-SNAPSHOT"
+      "href": "http://localhost:8080/api/1.0.2-SNAPSHOT"
     },
     "types": {
-      "href": "http://localhost:3333/api/1.0.2-SNAPSHOT/admin/type"
+      "href": "http://localhost:8080/api/1.0.2-SNAPSHOT/admin/type"
     },
     "units": {
-      "href": "http://localhost:3333/api/1.0.2-SNAPSHOT/admin/unit"
+      "href": "http://localhost:8080/api/1.0.2-SNAPSHOT/admin/unit"
     },
     "devices": {
-      "href": "http://localhost:3333/api/1.0.2-SNAPSHOT/device"
+      "href": "http://localhost:8080/api/1.0.2-SNAPSHOT/device"
     },
     "events": {
-      "href": "http://localhost:3333/api/1.0.2-SNAPSHOT/event?page=0"
+      "href": "http://localhost:8080/api/1.0.2-SNAPSHOT/event?page=0"
     }
   }
 }

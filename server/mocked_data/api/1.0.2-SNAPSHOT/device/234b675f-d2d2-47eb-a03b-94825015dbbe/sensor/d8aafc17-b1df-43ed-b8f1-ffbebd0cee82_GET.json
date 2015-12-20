@@ -8,19 +8,19 @@
         "description": "description 2.2",
         "_links": {
           "self": {
-            "href": "http://localhost:3333/api/1.0.2-SNAPSHOT/device/234b675f-d2d2-47eb-a03b-94825015dbbe/sensor/d8aafc17-b1df-43ed-b8f1-ffbebd0cee82"
+            "href": "http://localhost:8080/api/1.0.2-SNAPSHOT/device/234b675f-d2d2-47eb-a03b-94825015dbbe/sensor/d8aafc17-b1df-43ed-b8f1-ffbebd0cee82"
           },
           "type": {
-            "href": "http://localhost:3333/api/1.0.2-SNAPSHOT/admin/type/0a178349-753f-4a68-863f-e2ab17d996ec"
+            "href": "http://localhost:8080/api/1.0.2-SNAPSHOT/admin/type/0a178349-753f-4a68-863f-e2ab17d996ec"
           },
           "unit": {
-            "href": "http://localhost:3333/api/1.0.2-SNAPSHOT/admin/unit/7613ee6f-6365-46a5-966f-f70c372f9960"
+            "href": "http://localhost:8080/api/1.0.2-SNAPSHOT/admin/unit/7613ee6f-6365-46a5-966f-f70c372f9960"
           },
           "device": {
-            "href": "http://localhost:3333/api/1.0.2-SNAPSHOT/device/234b675f-d2d2-47eb-a03b-94825015dbbe"
+            "href": "http://localhost:8080/api/1.0.2-SNAPSHOT/device/234b675f-d2d2-47eb-a03b-94825015dbbe"
           },
           "readings": {
-            "href": "http://localhost:3333/api/1.0.2-SNAPSHOT/device/234b675f-d2d2-47eb-a03b-94825015dbbe/sensor/d8aafc17-b1df-43ed-b8f1-ffbebd0cee82/reading?page=0"
+            "href": "http://localhost:8080/api/1.0.2-SNAPSHOT/device/234b675f-d2d2-47eb-a03b-94825015dbbe/sensor/d8aafc17-b1df-43ed-b8f1-ffbebd0cee82/reading?page=0"
           }
         }
       },
@@ -31,19 +31,19 @@
         "description": "description 2.1",
         "_links": {
           "self": {
-            "href": "http://localhost:3333/api/1.0.2-SNAPSHOT/device/234b675f-d2d2-47eb-a03b-94825015dbbe/sensor/96bb3d34-7f28-4304-8877-c390c4b6e59d"
+            "href": "http://localhost:8080/api/1.0.2-SNAPSHOT/device/234b675f-d2d2-47eb-a03b-94825015dbbe/sensor/96bb3d34-7f28-4304-8877-c390c4b6e59d"
           },
           "type": {
-            "href": "http://localhost:3333/api/1.0.2-SNAPSHOT/admin/type/0a178349-753f-4a68-863f-e2ab17d996ec"
+            "href": "http://localhost:8080/api/1.0.2-SNAPSHOT/admin/type/0a178349-753f-4a68-863f-e2ab17d996ec"
           },
           "unit": {
-            "href": "http://localhost:3333/api/1.0.2-SNAPSHOT/admin/unit/7613ee6f-6365-46a5-966f-f70c372f9960"
+            "href": "http://localhost:8080/api/1.0.2-SNAPSHOT/admin/unit/7613ee6f-6365-46a5-966f-f70c372f9960"
           },
           "device": {
-            "href": "http://localhost:3333/api/1.0.2-SNAPSHOT/device/234b675f-d2d2-47eb-a03b-94825015dbbe"
+            "href": "http://localhost:8080/api/1.0.2-SNAPSHOT/device/234b675f-d2d2-47eb-a03b-94825015dbbe"
           },
           "readings": {
-            "href": "http://localhost:3333/api/1.0.2-SNAPSHOT/device/234b675f-d2d2-47eb-a03b-94825015dbbe/sensor/96bb3d34-7f28-4304-8877-c390c4b6e59d/reading?page=0"
+            "href": "http://localhost:8080/api/1.0.2-SNAPSHOT/device/234b675f-d2d2-47eb-a03b-94825015dbbe/sensor/96bb3d34-7f28-4304-8877-c390c4b6e59d/reading?page=0"
           }
         }
       }
@@ -51,7 +51,7 @@
   },
   "_links": {
     "self": {
-      "href": "http://localhost:3333/api/1.0.2-SNAPSHOT/device/234b675f-d2d2-47eb-a03b-94825015dbbe/sensor"
+      "href": "http://localhost:8080/api/1.0.2-SNAPSHOT/device/234b675f-d2d2-47eb-a03b-94825015dbbe/sensor"
     }
   }
 }

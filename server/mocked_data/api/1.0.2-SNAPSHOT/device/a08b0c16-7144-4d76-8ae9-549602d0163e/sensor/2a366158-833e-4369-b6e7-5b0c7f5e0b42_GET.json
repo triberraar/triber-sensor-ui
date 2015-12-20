@@ -5,19 +5,19 @@
   "description": "description 1.1",
   "_links": {
     "self": {
-      "href": "http://localhost:3333/api/1.0.2-SNAPSHOT/device/a08b0c16-7144-4d76-8ae9-549602d0163e/sensor/2a366158-833e-4369-b6e7-5b0c7f5e0b42"
+      "href": "http://localhost:8080/api/1.0.2-SNAPSHOT/device/a08b0c16-7144-4d76-8ae9-549602d0163e/sensor/2a366158-833e-4369-b6e7-5b0c7f5e0b42"
     },
     "type": {
-      "href": "http://localhost:3333/api/1.0.2-SNAPSHOT/admin/type/0a178349-753f-4a68-863f-e2ab17d996ec"
+      "href": "http://localhost:8080/api/1.0.2-SNAPSHOT/admin/type/0a178349-753f-4a68-863f-e2ab17d996ec"
     },
     "unit": {
-      "href": "http://localhost:3333/api/1.0.2-SNAPSHOT/admin/unit/7613ee6f-6365-46a5-966f-f70c372f9960"
+      "href": "http://localhost:8080/api/1.0.2-SNAPSHOT/admin/unit/7613ee6f-6365-46a5-966f-f70c372f9960"
     },
     "device": {
-      "href": "http://localhost:3333/api/1.0.2-SNAPSHOT/device/a08b0c16-7144-4d76-8ae9-549602d0163e"
+      "href": "http://localhost:8080/api/1.0.2-SNAPSHOT/device/a08b0c16-7144-4d76-8ae9-549602d0163e"
     },
     "readings": {
-      "href": "http://localhost:3333/api/1.0.2-SNAPSHOT/device/a08b0c16-7144-4d76-8ae9-549602d0163e/sensor/2a366158-833e-4369-b6e7-5b0c7f5e0b42/reading?page=0"
+      "href": "http://localhost:8080/api/1.0.2-SNAPSHOT/device/a08b0c16-7144-4d76-8ae9-549602d0163e/sensor/2a366158-833e-4369-b6e7-5b0c7f5e0b42/reading?page=0"
     }
   }
 }
