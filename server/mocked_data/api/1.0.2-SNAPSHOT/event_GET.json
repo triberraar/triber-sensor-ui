@@ -1,0 +1,177 @@
+{
+  "_embedded": {
+    "events": [
+      {
+        "eventSubject": "event.reading",
+        "eventId": "5da704ce-81fa-4bcc-b10d-aa46454da244",
+        "creationDate": 1449914766474,
+        "eventMode": "event.created",
+        "_links": {
+          "readings": {
+            "href": "http://localhost:3333/api/1.0.2-SNAPSHOT/device/234b675f-d2d2-47eb-a03b-94825015dbbe/sensor/d8aafc17-b1df-43ed-b8f1-ffbebd0cee82/reading?page=0"
+          }
+        }
+      },
+      {
+        "eventSubject": "event.reading",
+        "eventId": "b80b7768-278b-4dcc-9b1e-8177dffd53e8",
+        "creationDate": 1449914766456,
+        "eventMode": "event.created",
+        "_links": {
+          "readings": {
+            "href": "http://localhost:3333/api/1.0.2-SNAPSHOT/device/234b675f-d2d2-47eb-a03b-94825015dbbe/sensor/d8aafc17-b1df-43ed-b8f1-ffbebd0cee82/reading?page=0"
+          }
+        }
+      },
+      {
+        "eventSubject": "event.reading",
+        "eventId": "5fd4a2eb-6ec2-476a-a8ac-3b8c75c7f5b5",
+        "creationDate": 1449914766437,
+        "eventMode": "event.created",
+        "_links": {
+          "readings": {
+            "href": "http://localhost:3333/api/1.0.2-SNAPSHOT/device/234b675f-d2d2-47eb-a03b-94825015dbbe/sensor/96bb3d34-7f28-4304-8877-c390c4b6e59d/reading?page=0"
+          }
+        }
+      },
+      {
+        "eventSubject": "event.reading",
+        "eventId": "2cb75a0d-cc62-4a1f-8de6-dd11c499042c",
+        "creationDate": 1449914766417,
+        "eventMode": "event.created",
+        "_links": {
+          "readings": {
+            "href": "http://localhost:3333/api/1.0.2-SNAPSHOT/device/234b675f-d2d2-47eb-a03b-94825015dbbe/sensor/96bb3d34-7f28-4304-8877-c390c4b6e59d/reading?page=0"
+          }
+        }
+      },
+      {
+        "eventSubject": "event.reading",
+        "eventId": "99c000cd-2db4-4e3f-9a4c-7c898f11792d",
+        "creationDate": 1449914766398,
+        "eventMode": "event.created",
+        "_links": {
+          "readings": {
+            "href": "http://localhost:3333/api/1.0.2-SNAPSHOT/device/a08b0c16-7144-4d76-8ae9-549602d0163e/sensor/e70bdc39-cdbf-4f06-b5fe-ec0bf96e7323/reading?page=0"
+          }
+        }
+      },
+      {
+        "eventSubject": "event.reading",
+        "eventId": "0def4709-09f5-4d48-b2c3-3a89ec6c52f3",
+        "creationDate": 1449914766377,
+        "eventMode": "event.created",
+        "_links": {
+          "readings": {
+            "href": "http://localhost:3333/api/1.0.2-SNAPSHOT/device/a08b0c16-7144-4d76-8ae9-549602d0163e/sensor/e70bdc39-cdbf-4f06-b5fe-ec0bf96e7323/reading?page=0"
+          }
+        }
+      },
+      {
+        "eventSubject": "event.reading",
+        "eventId": "c5ff4d2a-b35e-4629-8860-67fa2abc2543",
+        "creationDate": 1449914766357,
+        "eventMode": "event.created",
+        "_links": {
+          "readings": {
+            "href": "http://localhost:3333/api/1.0.2-SNAPSHOT/device/a08b0c16-7144-4d76-8ae9-549602d0163e/sensor/2a366158-833e-4369-b6e7-5b0c7f5e0b42/reading?page=0"
+          }
+        }
+      },
+      {
+        "eventSubject": "event.reading",
+        "eventId": "1201f542-1a59-4795-a443-9b414e807b0a",
+        "creationDate": 1449914766338,
+        "eventMode": "event.created",
+        "_links": {
+          "readings": {
+            "href": "http://localhost:3333/api/1.0.2-SNAPSHOT/device/a08b0c16-7144-4d76-8ae9-549602d0163e/sensor/2a366158-833e-4369-b6e7-5b0c7f5e0b42/reading?page=0"
+          }
+        }
+      },
+      {
+        "eventSubject": "event.sensor",
+        "eventId": "d8aafc17-b1df-43ed-b8f1-ffbebd0cee82",
+        "creationDate": 1449914766318,
+        "eventMode": "event.created",
+        "_links": {
+          "sensor": {
+            "href": "http://localhost:3333/api/1.0.2-SNAPSHOT/device/234b675f-d2d2-47eb-a03b-94825015dbbe/sensor/d8aafc17-b1df-43ed-b8f1-ffbebd0cee82"
+          }
+        }
+      },
+      {
+        "eventSubject": "event.sensor",
+        "eventId": "96bb3d34-7f28-4304-8877-c390c4b6e59d",
+        "creationDate": 1449914766291,
+        "eventMode": "event.created",
+        "_links": {
+          "sensor": {
+            "href": "http://localhost:3333/api/1.0.2-SNAPSHOT/device/234b675f-d2d2-47eb-a03b-94825015dbbe/sensor/96bb3d34-7f28-4304-8877-c390c4b6e59d"
+          }
+        }
+      },
+      {
+        "eventSubject": "event.sensor",
+        "eventId": "e70bdc39-cdbf-4f06-b5fe-ec0bf96e7323",
+        "creationDate": 1449914766259,
+        "eventMode": "event.created",
+        "_links": {
+          "sensor": {
+            "href": "http://localhost:3333/api/1.0.2-SNAPSHOT/device/a08b0c16-7144-4d76-8ae9-549602d0163e/sensor/e70bdc39-cdbf-4f06-b5fe-ec0bf96e7323"
+          }
+        }
+      },
+      {
+        "eventSubject": "event.sensor",
+        "eventId": "2a366158-833e-4369-b6e7-5b0c7f5e0b42",
+        "creationDate": 1449914766237,
+        "eventMode": "event.created",
+        "_links": {
+          "sensor": {
+            "href": "http://localhost:3333/api/1.0.2-SNAPSHOT/device/a08b0c16-7144-4d76-8ae9-549602d0163e/sensor/2a366158-833e-4369-b6e7-5b0c7f5e0b42"
+          }
+        }
+      },
+      {
+        "eventSubject": "event.device",
+        "eventId": "234b675f-d2d2-47eb-a03b-94825015dbbe",
+        "creationDate": 1449914766192,
+        "eventMode": "event.created",
+        "_links": {
+          "device": {
+            "href": "http://localhost:3333/api/1.0.2-SNAPSHOT/device/234b675f-d2d2-47eb-a03b-94825015dbbe"
+          }
+        }
+      },
+      {
+        "eventSubject": "event.device",
+        "eventId": "a08b0c16-7144-4d76-8ae9-549602d0163e",
+        "creationDate": 1449914765994,
+        "eventMode": "event.created",
+        "_links": {
+          "device": {
+            "href": "http://localhost:3333/api/1.0.2-SNAPSHOT/device/a08b0c16-7144-4d76-8ae9-549602d0163e"
+          }
+        }
+      }
+    ]
+  },
+  "_links": {
+    "self": {
+      "href": "http://localhost:3333/api/1.0.2-SNAPSHOT/event?page=0"
+    },
+    "first": {
+      "href": "http://localhost:3333/api/1.0.2-SNAPSHOT/event?page=0"
+    },
+    "last": {
+      "href": "http://localhost:3333/api/1.0.2-SNAPSHOT/event?page=0"
+    }
+  },
+  "page": {
+    "size": 20,
+    "totalElements": 14,
+    "totalPages": 1,
+    "number": 0
+  }
+}
