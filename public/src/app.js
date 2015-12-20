@@ -12,7 +12,6 @@ import angular from 'angular';
 import angularMaterial from 'angular-material';
 import angularUIRouter from 'angular-ui-router';
 import traversonAngular from 'traverson-angular';
-import jsonHalAdapter from 'traverson-hal';
 
 import menu from './menu/menu.module.js';
 import type from './type/type.module';

@@ -1,13 +1,13 @@
 'use strict';
 
-import traversonAngular from 'traverson-angular';
+
 import TraversonJsonHalAdapter from 'traverson-hal';
+import angular from 'angular';
 
 export default class TypeController {
-    constructor(traverson, API) {
+    constructor(traverson, API, $log) {
         this.traverson = traverson;
         this.API = API;
-        console.log('test');
 
         traverson
             .registerMediaType('application/hal+json',
@@ -21,12 +21,12 @@ export default class TypeController {
             .getResource()
             .result
             .then(function(document) {
-               console.log(JSON.stringify(document));
+                $log.log(angular.toJson(document));
             }, function(err){
-                console.error('boom', JSON.stringify(err));
+                $log.error('boom', angular.toJson(err));
             });
     }
 
 }
 
-TypeController.$inject = ['traverson','API'];
+TypeController.$inject = ['traverson','API', '$log'];

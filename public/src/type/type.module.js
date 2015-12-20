@@ -8,5 +8,5 @@ import routing from './type.routes';
 
 export default angular.module('type', [angularUIRouter])
     .config(routing)
-    .controller('typeController', TypeController)
+    .controller('TypeController', TypeController)
     .name;

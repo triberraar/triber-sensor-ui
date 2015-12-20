@@ -17,7 +17,7 @@ menuRun.$inject = ['menuService'];
 
 export default angular.module('menu', [])
     .run(menuRun)
-    .controller('menuController', MenuController)
+    .controller('MenuController', MenuController)
     .service('menuService', MenuService)
     .directive('triberMenu', triberMenu)
     .name;

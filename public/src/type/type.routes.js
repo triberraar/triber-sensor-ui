@@ -7,7 +7,7 @@ export default function routes($stateProvider) {
         .state('type', {
             url: '/type',
             template: template,
-            controller: 'typeController',
+            controller: 'TypeController',
             controllerAs: 'typeController'
         });
 }

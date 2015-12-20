@@ -6,10 +6,10 @@
   "description": "description 2",
   "_links": {
     "self": {
-      "href": "http://localhost:8080/api/1.0.2-SNAPSHOT/device/234b675f-d2d2-47eb-a03b-94825015dbbe"
+      "href": "http://localhost:3333/api/1.0.2-SNAPSHOT/device/234b675f-d2d2-47eb-a03b-94825015dbbe"
     },
     "sensors": {
-      "href": "http://localhost:8080/api/1.0.2-SNAPSHOT/device/234b675f-d2d2-47eb-a03b-94825015dbbe/sensor"
+      "href": "http://localhost:3333/api/1.0.2-SNAPSHOT/device/234b675f-d2d2-47eb-a03b-94825015dbbe/sensor"
     }
   }
 }

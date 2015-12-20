@@ -42,7 +42,7 @@ function themeConfigure($mdThemingProvider) {
 }
 
 function routeConfigure($urlRouterProvider, $locationProvider) {
-    $locationProvider.html5Mode(true);
+    $locationProvider.html5Mode(false);
     $urlRouterProvider.otherwise('/');
 }
 

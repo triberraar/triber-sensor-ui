@@ -9,10 +9,10 @@
         "description": "description 2",
         "_links": {
           "self": {
-            "href": "http://localhost:8080/api/1.0.2-SNAPSHOT/device/234b675f-d2d2-47eb-a03b-94825015dbbe"
+            "href": "http://localhost:3333/api/1.0.2-SNAPSHOT/device/234b675f-d2d2-47eb-a03b-94825015dbbe"
           },
           "sensors": {
-            "href": "http://localhost:8080/api/1.0.2-SNAPSHOT/device/234b675f-d2d2-47eb-a03b-94825015dbbe/sensor"
+            "href": "http://localhost:3333/api/1.0.2-SNAPSHOT/device/234b675f-d2d2-47eb-a03b-94825015dbbe/sensor"
           }
         }
       },
@@ -24,10 +24,10 @@
         "description": "description 1",
         "_links": {
           "self": {
-            "href": "http://localhost:8080/api/1.0.2-SNAPSHOT/device/a08b0c16-7144-4d76-8ae9-549602d0163e"
+            "href": "http://localhost:3333/api/1.0.2-SNAPSHOT/device/a08b0c16-7144-4d76-8ae9-549602d0163e"
           },
           "sensors": {
-            "href": "http://localhost:8080/api/1.0.2-SNAPSHOT/device/a08b0c16-7144-4d76-8ae9-549602d0163e/sensor"
+            "href": "http://localhost:3333/api/1.0.2-SNAPSHOT/device/a08b0c16-7144-4d76-8ae9-549602d0163e/sensor"
           }
         }
       }
@@ -35,7 +35,7 @@
   },
   "_links": {
     "self": {
-      "href": "http://localhost:8080/api/1.0.2-SNAPSHOT/device"
+      "href": "http://localhost:3333/api/1.0.2-SNAPSHOT/device"
     }
   }
 }

@@ -14,7 +14,7 @@ describe('menu.module', () => {
 
     describe('menuItem', function() {
         const TITLE = 'Title';
-        const SREF = 'srf'
+        const SREF = 'srf';
         const ICON = 'icon class';
 
         it('should be able to construct a menuItem', () => {
@@ -89,7 +89,7 @@ describe('menu.module', () => {
             let injectedMenuController;
 
             angular.mock.inject(function(_$controller_, _menuService_) {
-                injectedMenuController = _$controller_('menuController', {menuService: _menuService_});
+                injectedMenuController = _$controller_('MenuController', {menuService: _menuService_});
             });
             expect(injectedMenuController).toBeDefined();
         });
@@ -131,7 +131,7 @@ describe('menu.module', () => {
 
             expect(triberMenuDirective.restrict).toEqual('E');
             expect(triberMenuDirective.template).toEqual(template);
-            expect(triberMenuDirective.controller).toEqual('menuController');
+            expect(triberMenuDirective.controller).toEqual('MenuController');
             expect(triberMenuDirective.controllerAs).toEqual('menuController');
         });
     });

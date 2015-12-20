@@ -3,15 +3,23 @@
 // Modules
 var webpack = require('webpack');
 var autoprefixer = require('autoprefixer');
-var ngAnnotatePlugin = require('ng-annotate-webpack-plugin');
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 var Clean = require('clean-webpack-plugin');
+var ngAnnotatePlugin = require('ng-annotate-webpack-plugin');
 
 var config = {};
 
-config.entry = {};
-config.output = {};
+config.entry = {
+    app: './public/src/app.js'
+};
 
-config.devtool = 'inline-source-map';
+config.output = {
+    path: __dirname + '/public/build',
+    filename: 'bundle.js'
+};
+
+config.devtool = 'source-map';
+
 config.module = {
     loaders: [{
         test: /\.js$/,
@@ -38,29 +46,23 @@ config.module = {
     }, {
         test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
         loader: 'url?limit=10000&mimetype=image/svg+xml'
-    }, {
+    },{
         test: /\.css$/,
         loader: 'style!css'
     }
     ]
 };
 
-config.module.preLoaders=[{
-    test: /\.js$/,
-    exclude: [
-        /node_modules/,
-        /\.spec\.js$/
-    ],
-    loader: 'isparta-instrumenter'
-}];
-
 config.plugins = [
     new Clean(['./public/build']),
     new ngAnnotatePlugin({
         add: true
+    }),
+    new HtmlWebpackPlugin({
+        template: './public/src/index.html',
+        inject: 'body'
     })
 ];
 
-config.progress = true;
 
 module.exports = config;
