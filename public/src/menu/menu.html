@@ -4,7 +4,7 @@
         </md-button>
     </md-toolbar>
     <div ng-repeat="menuItem in menuController.getMenuItems()">
-        <md-button layout="column" layout-align="center center" flex >
+        <md-button layout="column" layout-align="center center" flex ui-sref="{{menuItem.sref}}">
             <div class="md-tile-content">
             </div>
             <div class="md-tile-content">{{menuItem.title}}</div>

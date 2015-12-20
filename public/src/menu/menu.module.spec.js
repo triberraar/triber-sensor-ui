@@ -14,19 +14,22 @@ describe('menu.module', () => {
 
     describe('menuItem', function() {
         const TITLE = 'Title';
+        const SREF = 'srf'
         const ICON = 'icon class';
 
         it('should be able to construct a menuItem', () => {
-            let menuItem = new MenuItem(TITLE, ICON);
+            let menuItem = new MenuItem(TITLE, SREF, ICON);
 
             expect(menuItem.title).toEqual(TITLE);
             expect(menuItem.icon).toEqual(ICON);
+            expect(menuItem.sref).toEqual(SREF);
         });
 
         it('should be able to construct a menuItem without icon', () => {
-            let menuItem = new MenuItem(TITLE);
+            let menuItem = new MenuItem(TITLE, SREF);
 
             expect(menuItem.title).toEqual(TITLE);
+            expect(menuItem.sref).toEqual(SREF);
             expect(menuItem.icon).toBeUndefined();
         });
     });
@@ -141,10 +144,10 @@ describe('menu.module', () => {
             });
 
             expect(menuService.getItems().length).toEqual(4);
-            expect(menuService.getItems()[0]).toEqual(new MenuItem('Dashboard', 'fa fa-tachometer fa-2x'));
-            expect(menuService.getItems()[1]).toEqual(new MenuItem('Devices', 'fa fa-desktop fa-2x'));
-            expect(menuService.getItems()[2]).toEqual(new MenuItem('Units'));
-            expect(menuService.getItems()[3]).toEqual(new MenuItem('Types'));
+            expect(menuService.getItems()[0]).toEqual(new MenuItem('Dashboard', 'dashboard', 'fa fa-tachometer fa-2x'));
+            expect(menuService.getItems()[1]).toEqual(new MenuItem('Devices', 'device', 'fa fa-desktop fa-2x'));
+            expect(menuService.getItems()[2]).toEqual(new MenuItem('Units', 'unit'));
+            expect(menuService.getItems()[3]).toEqual(new MenuItem('Types', 'type'));
 
         });
     });

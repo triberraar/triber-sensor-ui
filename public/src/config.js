@@ -41,6 +41,13 @@ function themeConfigure($mdThemingProvider) {
     });
 }
 
+function routeConfigure($urlRouterProvider, $locationProvider) {
+    $locationProvider.html5Mode(true);
+    $urlRouterProvider.otherwise('/');
+}
+
 themeConfigure.$inject = ['$mdThemingProvider'];
+routeConfigure.$inject = ['$urlRouterProvider','$locationProvider'];
 
 export default themeConfigure;
+export default routeConfigure;
