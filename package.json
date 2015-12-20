@@ -10,7 +10,6 @@
     "server-prod": "node server/app.js --port=3333 --mode=prod --proxy.host=localhost --proxy.port=8080 | node_modules/bunyan/bin/bunyan",
     "lint": "eslint public/src",
     "coveralls": "coveralls < public/build/coverage/lcov/lcov.info",
-
     "dev": "npm run client-dev & npm run server-mock",
     "test": "npm run lint && npm run test-karma",
     "test:live": "npm run lint & npm run test-karma:live"
@@ -27,6 +26,7 @@
     "minimist": "^1.2.0"
   },
   "devDependencies": {
+    "ng-annotate-webpack-plugin": "^0.1.2",
     "angular": "^1.4.7",
     "angular-animate": "^1.4.8",
     "angular-aria": "^1.4.8",
