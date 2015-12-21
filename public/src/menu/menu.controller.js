@@ -5,8 +5,8 @@ export default class MenuController {
         this.menuService = menuService;
     }
 
-    getMenuItems() {
-        return this.menuService.getItems();
+    get menuItems() {
+        return this.menuService.items;
     }
 }
 

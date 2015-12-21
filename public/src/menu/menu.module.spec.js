@@ -65,14 +65,14 @@ describe('menu.module', () => {
             });
         });
 
-        describe('getItems', () => {
+        describe('items', () => {
             it('should get all items', () => {
                 const ITEM = 'item';
                 let menuService = new MenuService();
 
                 menuService.addItem(ITEM);
 
-                expect(menuService.getItems()).toEqual([ITEM]);
+                expect(menuService.items).toEqual([ITEM]);
             });
         });
     });
@@ -80,9 +80,7 @@ describe('menu.module', () => {
     describe('MenuController', () => {
         const MENU_ITEMS = 'menuItems';
         const menuServiceSpy = {
-            getItems: function() {
-                return MENU_ITEMS;
-            }
+            items : MENU_ITEMS
         };
 
         it('angular can find the controller', function() {
@@ -105,7 +103,7 @@ describe('menu.module', () => {
             it('should return all menuItems', () => {
                 let controller = new MenuController(menuServiceSpy);
 
-                expect(controller.getMenuItems()).toEqual(MENU_ITEMS);
+                expect(controller.menuItems).toEqual(MENU_ITEMS);
             });
 
         });
@@ -143,11 +141,11 @@ describe('menu.module', () => {
                 menuService = _menuService_;
             });
 
-            expect(menuService.getItems().length).toEqual(4);
-            expect(menuService.getItems()[0]).toEqual(new MenuItem('Dashboard', 'dashboard', 'fa fa-tachometer fa-2x'));
-            expect(menuService.getItems()[1]).toEqual(new MenuItem('Devices', 'device', 'fa fa-desktop fa-2x'));
-            expect(menuService.getItems()[2]).toEqual(new MenuItem('Units', 'unit'));
-            expect(menuService.getItems()[3]).toEqual(new MenuItem('Types', 'type'));
+            expect(menuService.items.length).toEqual(4);
+            expect(menuService.items[0]).toEqual(new MenuItem('Dashboard', 'dashboard', 'fa fa-tachometer fa-2x'));
+            expect(menuService.items[1]).toEqual(new MenuItem('Devices', 'device', 'fa fa-desktop fa-2x'));
+            expect(menuService.items[2]).toEqual(new MenuItem('Units', 'unit'));
+            expect(menuService.items[3]).toEqual(new MenuItem('Types', 'type'));
 
         });
     });

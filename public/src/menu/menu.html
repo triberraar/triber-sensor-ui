@@ -3,7 +3,7 @@
         <md-button layout="row" layout-align="center center" class="md-toolbar-tools md-warn" href="">
         </md-button>
     </md-toolbar>
-    <div ng-repeat="menuItem in menuController.getMenuItems()">
+    <div ng-repeat="menuItem in menuController.menuItems">
         <md-button layout="column" layout-align="center center" flex ui-sref="{{menuItem.sref}}">
             <div class="md-tile-content">
             </div>

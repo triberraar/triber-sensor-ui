@@ -2,15 +2,15 @@
 
 class MenuService {
     constructor() {
-        this.items = [];
+        this._items = [];
     }
 
     addItem(item) {
-        this.items.push(item);
+        this._items.push(item);
     }
 
-    getItems() {
-        return this.items;
+    get items() {
+        return this._items;
     }
 }
 
