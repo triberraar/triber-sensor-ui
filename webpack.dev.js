@@ -16,6 +16,9 @@ var config = {
         filename: 'bundle.js'
     },
     devtool: 'source-map',
+    resolveLoader: {
+        packageMains: ['json-loader']
+    },
     module: {
         preLoaders: [
             {test: /\.js$/, loader: 'eslint-loader', exclude: /node_modules/}
@@ -48,6 +51,10 @@ var config = {
         },{
             test: /\.css$/,
             loader: 'style!css'
+        }, {
+            test: /\.json$/,
+            loader: 'json-loader',
+            exclude: /node_modules/
         }]
     },
     plugins:[

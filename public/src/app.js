@@ -16,6 +16,8 @@ import traversonAngular from 'traverson-angular';
 import menu from './menu/menu.module.js';
 import type from './type/type.module';
 
+import packageJson from '../../package.json';
+
 let dependencies = [
     angularMaterial,
     angularUIRouter,
@@ -26,7 +28,7 @@ let dependencies = [
 ];
 
 const app = angular.module('app', dependencies)
-    .constant('API', {'version' : '1.0.2-SNAPSHOT'})
+    .constant('API', {'version' : packageJson.apiVersion})
     .config(themeConfigure)
     .config(routeConfigure);
 
