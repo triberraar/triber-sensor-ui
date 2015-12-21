@@ -5,6 +5,7 @@
   "scripts": {
     "client": "webpack --config webpack.dev.js --progress -d",
     "client-dev": "webpack --config webpack.dev.js --progress -d --watch",
+    "client-prod": "webpack --config webpack.prod.js --progress -p",
     "test-karma": "karma start",
     "test-karma:live": "karma start --auto-watch --no-single-run",
     "server-mock": "node server/app.js --port=3333 --mode=mock | node_modules/bunyan/bin/bunyan",
@@ -27,7 +28,6 @@
     "minimist": "^1.2.0"
   },
   "devDependencies": {
-    "ng-annotate-webpack-plugin": "^0.1.2",
     "angular": "^1.4.7",
     "angular-animate": "^1.4.8",
     "angular-aria": "^1.4.8",
@@ -45,6 +45,7 @@
     "css-loader": "^0.21.0",
     "eslint": "^1.10.3",
     "eslint-config-angular": "^0.4.0",
+    "eslint-loader": "^1.1.1",
     "eslint-plugin-angular": "^0.15.0",
     "extract-text-webpack-plugin": "^0.8.2",
     "file-loader": "^0.8.5",
@@ -62,6 +63,7 @@
     "karma-spec-reporter": "0.0.21",
     "karma-webpack": "^1.7.0",
     "ng-annotate-loader": "0.0.10",
+    "ng-annotate-webpack-plugin": "^0.1.2",
     "node-libs-browser": "^0.5.3",
     "null-loader": "^0.1.1",
     "phantomjs": "^1.9.18",
